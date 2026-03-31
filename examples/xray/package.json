@@ -1,0 +1,25 @@
+{
+  "name": "xray",
+  "version": "0.1.0",
+  "description": "Analyze any GitHub repo with parallel CC Commander agents",
+  "type": "module",
+  "main": "dist/src/xray.js",
+  "bin": {
+    "xray": "dist/bin/xray.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cc-commander": "file:../../"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.1.0"
+  }
+}
